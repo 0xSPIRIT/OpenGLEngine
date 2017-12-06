@@ -1,7 +1,7 @@
 #ifndef GAMELOOP_H
 #define GAMELOOP_H
 
-#include "Window.h"
+#include "../window/Window.h"
 
 class GameLoop {
 public:
@@ -9,8 +9,8 @@ public:
 
 	void run();
 
-	void update();
-	void render();
+	virtual void update() = 0;
+	virtual void render() = 0;
 
 	Window getWindow() { return m_Window; }
 private:

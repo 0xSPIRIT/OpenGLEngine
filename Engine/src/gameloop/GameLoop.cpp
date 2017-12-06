@@ -1,28 +1,6 @@
 #include "GameLoop.h"
 
 GameLoop::GameLoop(const Window& window) : m_Window(window), m_Running(true) {
-
-}
-
-void GameLoop::update() {
-
-}
-
-void GameLoop::render() {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-	glBegin(GL_TRIANGLES);
-
-	glColor3f	(1, 0, 0);
-	glVertex2f	( 0.0f,  0.5f);
-	
-	glColor3f	(0, 1, 0);
-	glVertex2f	(-0.5f, -0.5f);
-	
-	glColor3f	(0, 0, 1);
-	glVertex2f	( 0.5f, -0.5f);
-
-	glEnd();
 }
 
 void GameLoop::run() {
@@ -36,6 +14,7 @@ void GameLoop::run() {
 
 		update();
 		render();
+
 
 		SDL_GL_SwapWindow(m_Window.getSDLWindow());
 	}

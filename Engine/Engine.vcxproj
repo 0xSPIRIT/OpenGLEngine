@@ -121,15 +121,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Errors.cpp" />
-    <ClCompile Include="GameLoop.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="src\utils\Errors.cpp" />
+    <ClCompile Include="src\non-engine\Game.cpp" />
+    <ClCompile Include="src\gameloop\GameLoop.cpp" />
+    <ClCompile Include="src\non-engine\main.cpp" />
+    <ClCompile Include="src\window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Errors.h" />
-    <ClInclude Include="GameLoop.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="src\utils\Errors.h" />
+    <ClInclude Include="src\non-engine\Game.h" />
+    <ClInclude Include="src\gameloop\GameLoop.h" />
+    <ClInclude Include="src\window\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

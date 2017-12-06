@@ -5,7 +5,7 @@
 #include <iostream>
 #include <glew.h>
 
-#include "Errors.h"
+#include "../utils/Errors.h"
 
 class Window {
 public:

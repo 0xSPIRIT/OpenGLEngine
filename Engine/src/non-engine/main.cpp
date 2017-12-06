@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "GameLoop.h"
+#include "Game.h"
 
 int main(int argc, char** argv) {
 	
@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 	}
 
 	Window window("This is the title of the window", 900, 600);
-	GameLoop game(window);
+	Game game(window);
 
 	game.run();
 
